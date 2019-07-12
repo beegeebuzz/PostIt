@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New PostIt{% endblock %}
+
+{% block body %}
+    <h1>Create new PostIt</h1>
+
+    {{ include('post_it/_form.html.twig') }}
+
+    <a href="{{ path('post_it_index') }}">back to list</a>
+{% endblock %}
