@@ -2,3 +2,8 @@ body {
     background-image: url("../img/background.jpg");
     background-size: cover;
 }
+
+card {
+    background-image: url("../img/background-card.jpg");
+    background-size: cover;
+}

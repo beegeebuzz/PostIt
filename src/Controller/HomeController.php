@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use App\Entity\PostIt;
 use App\Repository\PostItRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;

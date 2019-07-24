@@ -3,11 +3,26 @@
 {% block title %}Welcome in Post.IT app{% endblock %}
 
 {% block body %}
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Title</h5>
-            <p class="card-text">Content</p>
-            <a href="#" class="card-link">Card link</a>
+    <div class="container">
+        <div class="card-columns">
+            <div class="card rounded-0" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <p class="card-text">Content</p>
+                </div>
+            </div>
+            {% for post_it in post_its %}
+            <div class="card rounded-0" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ post_it.title }}</h5>
+
+                    <h6 class="card-subtitle mb-2 text-muted">{{ post_it.category.name }}</h6>
+
+                    <p class="card-text">{{ post_it.content }}</p>
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
+
 {% endblock %}
